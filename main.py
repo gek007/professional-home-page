@@ -65,3 +65,31 @@ def bytearray_example(data: bytearray) -> int:
 def initialized_list_example() -> list[int]:
     numbers = [10, 20, 30, 40]
     return numbers
+
+
+def iterate_list_example(items: list[int]) -> list[int]:
+    doubled_values: list[int] = []
+    for value in items:
+        doubled_values.append(value * 2)
+    return doubled_values
+
+
+def iterate_dict_example(items: dict[str, int]) -> list[str]:
+    pairs: list[str] = []
+    for key, value in items.items():
+        pairs.append(f"{key}:{value}")
+    return pairs
+
+
+def iterate_set_example(items: set[str]) -> list[str]:
+    upper_values: list[str] = []
+    for value in items:
+        upper_values.append(value.upper())
+    return upper_values
+
+
+def iterate_tuple_example(items: tuple[int, ...]) -> int:
+    total = 0
+    for value in items:
+        total += value
+    return total
