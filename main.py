@@ -92,4 +92,4 @@ def iterate_tuple_example(items: tuple[int, ...]) -> int:
     total = 0
     for value in items:
         total += value
-    return total
+    retur
